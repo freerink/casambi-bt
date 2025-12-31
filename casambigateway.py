@@ -34,7 +34,7 @@ class CasambiService:
         self.configured_devices = []
 
     async def discover(self):
-        print("Searching...")
+        print("Searching for Casambi devices ...")
         self.discovered_devices = await discover()
 
         self.discovered_addresses = []
